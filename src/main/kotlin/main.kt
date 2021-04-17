@@ -14,4 +14,14 @@ fun main(args: Array<String>) {
 
     println ("$name was on $year/$month")
 
+    // Challenge
+    val card = Triple("Visa", "1221212", "21/02")
+    val account = Pair(16000.0, card)
+    val (balance, cb) = account
+    val (cardName, cardNumber, _) = card
+
+    println ("Account $balance,$cardName,$cardNumber")
+
+
+
 }
