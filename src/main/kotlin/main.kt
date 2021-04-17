@@ -39,4 +39,25 @@ fun main(args: Array<String>) {
 
     val hasVisitedCountry = visitedCountries.contains("GB")
     println ("Visited country ? $hasVisitedCountry")
+
+    // List
+    val cities = listOf("Paris", "Los Angeles", "Amsterdam", "Barcelone", "Casablanca")
+    println (cities)
+
+    // Mutuable list
+    val mutableCitiesList = cities.toMutableList()
+    mutableCitiesList.add("London")
+    mutableCitiesList.add(1, "Bordeaux")
+    println (mutableCitiesList)
+
+    mutableCitiesList.remove("Paris")
+    mutableCitiesList.removeAt(0)
+    mutableCitiesList.removeAll(listOf("London", "Amsterdam"))
+    println (mutableCitiesList)
+
+    val combinedList = cities + mutableCitiesList
+    println (combinedList)
+
+    mutableCitiesList.clear()
+    println (mutableCitiesList)
 }
