@@ -60,4 +60,16 @@ fun main(args: Array<String>) {
 
     mutableCitiesList.clear()
     println (mutableCitiesList)
+
+    // Challenge
+    val favouredFilms = arrayOf<String>(
+        "Alien", "StarWars", "The 5th Element", "James Bond 007"
+    )
+    favouredFilms[1] = "Starwars III"
+
+    val favouredFilmList = favouredFilms.toMutableList()
+    favouredFilmList.add("Indiana Jones")
+    favouredFilmList.add(3, "Big blue")
+    favouredFilmList.remove("The 5th Element")
+    println(favouredFilmList)
 }
