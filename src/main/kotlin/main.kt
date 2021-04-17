@@ -22,6 +22,21 @@ fun main(args: Array<String>) {
 
     println ("Account $balance,$cardName,$cardNumber")
 
+    // Array
+    val visitedCountries = arrayOf<String>(
+       "USA", "CostaRica", "Spain", "Netherlands"
+    )
 
+    println(visitedCountries[1])
+    println(visitedCountries.get(2))
 
+    println(visitedCountries.size)
+    visitedCountries[1] = "United State of America"
+    println(visitedCountries[1])
+
+    println(visitedCountries.first())
+    println(visitedCountries.last())
+
+    val hasVisitedCountry = visitedCountries.contains("GB")
+    println ("Visited country ? $hasVisitedCountry")
 }
